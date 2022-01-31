@@ -155,7 +155,7 @@
     <ClCompile Include="src\Object\Fish.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Object\Duck.cpp" />
-    <ClCompile Include="src\Object\SFMLObject.cpp" />
+    <ClCompile Include="src\Object\Animal.cpp" />
     <ClCompile Include="src\UI\GameOver.cpp" />
     <ClCompile Include="src\UI\Score.cpp" />
     <ClCompile Include="src\Utils\TextureAtlas.cpp" />
@@ -165,7 +165,7 @@
     <ClInclude Include="src\Interface\IDrawable.h" />
     <ClInclude Include="src\Object\Duck.h" />
     <ClInclude Include="src\Object\Fish.h" />
-    <ClInclude Include="src\Object\SFMLObject.h" />
+    <ClInclude Include="src\Object\Animal.h" />
     <ClInclude Include="src\UI\GameOver.h" />
     <ClInclude Include="src\UI\Score.h" />
     <ClInclude Include="src\Utils\Config.h" />

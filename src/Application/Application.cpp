@@ -42,7 +42,7 @@ Application::Application(const std::string& title)
 
 Application::~Application()
 {
-	for (SFMLObject* object : mObjects)
+	for (Animal* object : mObjects)
 		delete object;
 
 	delete mScoreUI;
@@ -103,14 +103,14 @@ void Application::update(float deltaTime)
 
 	mScoreUI->update(deltaTime);
 
-	mObjects.erase(std::remove_if(mObjects.begin(), mObjects.end(), [](SFMLObject* object) { return object->getIsDesignatedForTermination(); }), mObjects.end());
+	mObjects.erase(std::remove_if(mObjects.begin(), mObjects.end(), [](Animal* object) { return object->getIsDesignatedForTermination(); }), mObjects.end());
 }
 
 void Application::render()
 {
 	mWindow.clear(sf::Color(255, 192, 128, 255));
 
-	for (SFMLObject* object : mObjects)
+	for (Animal* object : mObjects)
 		object->draw(mWindow);
 
 	mScoreUI->draw(mWindow);
@@ -123,7 +123,7 @@ void Application::render()
 
 void Application::resetGame()
 {
-	for (SFMLObject* object : mObjects)
+	for (Animal* object : mObjects)
 		delete object;
 
 	mObjects.clear();

@@ -4,9 +4,9 @@
 
 #include <Utils/TextureAtlas.h>
 #include <Utils/Config.h>
-#include <Object/SFMLObject.h>
+#include <Object/Animal.h>
 
-class Duck : public SFMLObject
+class Duck : public Animal
 {
 private:
 	float mSpeed = 500.0f;
