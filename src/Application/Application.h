@@ -8,7 +8,7 @@
 
 #include <Utils/EnumFishEndState.h>
 #include <Utils/TextureAtlas.h>
-#include <Object/SFMLObject.h>
+#include <Object/Animal.h>
 #include <Object/Duck.h>
 #include <Object/Fish.h>
 #include <UI/Score.h>
@@ -19,7 +19,7 @@ class Application
 private:
 	sf::RenderWindow mWindow;
 
-	std::vector<SFMLObject*> mObjects;
+	std::vector<Animal*> mObjects;
 	Score* mScoreUI;
 	GameOver* mGameOverUI;
 

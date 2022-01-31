@@ -1,6 +1,6 @@
 #include "Fish.h"
 
-Fish::Fish(float speed, SFMLObject* playerPtr, Score* scoreUIPtr, sf::Vector2f size, sf::Vector2f position)
+Fish::Fish(float speed, Animal* playerPtr, Score* scoreUIPtr, sf::Vector2f size, sf::Vector2f position)
 {
 	create(TextureAtlas::getInstance()->getTexture("fishTexture"), size, position);
 

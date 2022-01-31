@@ -6,19 +6,19 @@
 #include <Utils/EnumFishEndState.h>
 #include <Utils/TextureAtlas.h>
 #include <Utils/Config.h>
-#include <Object/SFMLObject.h>
+#include <Object/Animal.h>
 #include <UI/Score.h>
 
-class Fish : public SFMLObject
+class Fish : public Animal
 {
 private:
 	float mSpeed;
 
-	SFMLObject* mPlayerPtr;
+	Animal* mPlayerPtr;
 	Score* mScorePtr;
 
 public:
-	Fish(float speed, SFMLObject* player, Score* scoreUIPtr, sf::Vector2f size, sf::Vector2f position = sf::Vector2f());
+	Fish(float speed, Animal* player, Score* scoreUIPtr, sf::Vector2f size, sf::Vector2f position = sf::Vector2f());
 
 	virtual void update(float deltaTime);
 };
